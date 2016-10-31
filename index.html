@@ -1,21 +1,21 @@
 ---
 layout: workshop      # DON'T CHANGE THIS.
 root: .               # DON'T CHANGE THIS EITHER.  (THANK YOU.)
-carpentry: "FIXME"    # what kind of Carpentry (must be either "dc" or "swc")
-venue: "FIXME"        # brief name of host site without address (e.g., "Euphoric State University")
-address: "FIXME"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria")
-country: "FIXME"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1)
-language: "FIXME"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/ISO_639-1)
-latlng: "FIXME"       # decimal latitude and longitude of workshop venue (e.g., "41.7901128,-87.6007318" - use http://www.latlong.net/)
-humandate: "FIXME"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
-humantime: "FIXME"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
-startdate: FIXME      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
-enddate: FIXME        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
-instructor: ["FIXME"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
-helper: ["FIXME"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
-contact: ["fixme@example.org"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
-etherpad:             # optional: URL for the workshop Etherpad if there is one
-eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
+carpentry: "swc"      # what kind of Carpentry (must be either "dc" or "swc")
+venue: "University of Illinois" # brief name of host site without address (e.g., "Euphoric State University")
+address: "Room 106, Main Library. 1408 W. Gregory Drive, Urbana, IL 61801"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria")
+country: "US" # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1)
+language: "US" # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/ISO_639-1)
+latlng: "40.104704,-88.229010" # decimal latitude and longitude of workshop venue (e.g., "41.7901128,-87.6007318" - use http://www.latlong.net/)
+humandate: "Nov 3-4, 2016" # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
+humantime: "9:00 am - 4:30 pm" # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
+startdate: 2016-11-03 # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
+enddate: 2016-11-04 # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
+instructor: ["Elizabeth Wickes", "David LeBauer", "Neal Davis", "Maxim Belkin"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
+helper: ["Johnathan Rush"] # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
+contact: ["training@cse.illinois.edu"] # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
+etherpad:  "http://pad.software-carpentry.org/2016-11-03-uiuc" # optional: URL for the workshop Etherpad if there is one
+eventbrite:  "27148764686" # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
 ---
 
 <!-- See instructions in the comments below for how to edit specific sections of this workshop template. -->
@@ -272,6 +272,18 @@ and the administrator will contact you if we need any extra information.</h4>
     </ul>
   </div>
   <div class="col-md-6">
+    <h3 id="syllabus-r">Programming in R</h3>
+    <ul>
+      <li>Working with vectors and data frames</li>
+      <li>Reading and plotting data</li>
+      <li>Creating and using functions</li>
+      <li>Loops and conditionals</li>
+      <li>Using R from the command line</li>
+      <li><a href="{{site.swc_pages}}/r-novice-inflammation/reference/">Reference...</a></li>
+    </ul>
+  </div>
+  <!--
+  <div class="col-md-6">
     <h3 id="syllabus-python">Programming in Python</h3>
     <ul>
       <li>Using libraries</li>
@@ -282,18 +294,6 @@ and the administrator will contact you if we need any extra information.</h4>
       <li>Defensive programming</li>
       <li>Using Python from the command line</li>
       <li><a href="{{site.swc_pages}}/python-novice-inflammation/reference/">Reference...</a></li>
-    </ul>
-  </div>
-  <!--
-  <div class="col-md-6">
-    <h3 id="syllabus-r">Programming in R</h3>
-    <ul>
-      <li>Working with vectors and data frames</li>
-      <li>Reading and plotting data</li>
-      <li>Creating and using functions</li>
-      <li>Loops and conditionals</li>
-      <li>Using R from the command line</li>
-      <li><a href="{{site.swc_pages}}/r-novice-inflammation/reference/">Reference...</a></li>
     </ul>
   </div>
   -->
@@ -314,20 +314,6 @@ and the administrator will contact you if we need any extra information.</h4>
 
 <div class="row">
   <div class="col-md-6">
-    <h3 id="syllabus-git">Version Control with Git</h3>
-    <ul>
-      <li>Creating a repository</li>
-      <li>Recording changes to files: <code>add</code>, <code>commit</code>, ...</li>
-      <li>Viewing changes: <code>status</code>, <code>diff</code>, ...</li>
-      <li>Ignoring files</li>
-      <li>Working on the web: <code>clone</code>, <code>pull</code>, <code>push</code>, ...</li>
-      <li>Resolving conflicts</li>
-      <li>Open licenses</li>
-      <li>Where to host work, and why</li>
-      <li><a href="{{site.swc_pages}}/git-novice/reference/">Reference...</a></li>
-    </ul>
-  </div>
-  <div class="col-md-6">
     <h3 id="syllabus-sql">Managing Data with SQL</h3>
     <ul>
       <li>Reading and sorting data</li>
@@ -339,6 +325,20 @@ and the administrator will contact you if we need any extra information.</h4>
       <li>Creating, modifying, and deleting data</li>
       <li>Programming with databases</li>
       <li><a href="{{site.swc_pages}}/sql-novice-survey/reference/">Reference...</a></li>
+    </ul>
+  </div>
+  <div class="col-md-6">
+    <h3 id="syllabus-git">Version Control with Git</h3>
+    <ul>
+      <li>Creating a repository</li>
+      <li>Recording changes to files: <code>add</code>, <code>commit</code>, ...</li>
+      <li>Viewing changes: <code>status</code>, <code>diff</code>, ...</li>
+      <li>Ignoring files</li>
+      <li>Working on the web: <code>clone</code>, <code>pull</code>, <code>push</code>, ...</li>
+      <li>Resolving conflicts</li>
+      <li>Open licenses</li>
+      <li>Where to host work, and why</li>
+      <li><a href="{{site.swc_pages}}/git-novice/reference/">Reference...</a></li>
     </ul>
   </div>
 </div>
