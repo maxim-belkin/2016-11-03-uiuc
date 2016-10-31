@@ -185,34 +185,35 @@ and the administrator will contact you if we need any extra information.</h4>
   to match your plans.  You may also want to change 'Day 1' and 'Day
   2' to be actual dates or days of the week.
 -->
-<h3 id="schedule"><br />Our Schedule</h3>
-<hr />
 
+<h3 id="surveys"><br />Surveys</h3>
 <!-- DO NOT EDIT SURVEY LINKS -->
-<p><em>Surveys</em></p>
 <p>Please be sure to complete these surveys before and after the workshop.</p>
 <p><a href="{{ site.pre_survey }}{{ site.github.project_title }}">Pre-workshop Survey</a></p>
 <p><a href="{{ site.post_survey }}{{ site.github.project_title }}">Post-workshop Survey</a></p>
 
+
+<h3 id="schedule"><br />Our Schedule</h3>
+<hr />
 <div class="row">
   <div class="col-md-6">
-    <h3>Day 1</h3>
+    <h4>Day 1</h4>
     <table class="table table-striped">
       <tr> <td>09:00</td>  <td>Automating tasks with the Unix shell</td> </tr>
-      <tr> <td>10:30</td> <td>Coffee</td> </tr>
+      <tr> <td>10:30</td>  <td>Coffee</td> </tr>
       <tr> <td>12:00</td>  <td>Lunch break</td> </tr>
-      <tr> <td>13:00</td>  <td>Building programs with Python</td> </tr>
+      <tr> <td>13:00</td>  <td>Programming in R</td> </tr>
       <tr> <td>14:30</td>  <td>Coffee</td> </tr>
       <tr> <td>16:00</td>  <td>Wrap-up</td> </tr>
     </table>
   </div>
   <div class="col-md-6">
-    <h3>Day 2</h3>
+    <h4>Day 2</h4>
     <table class="table table-striped">
-      <tr> <td>09:00</td>  <td>Version control with Git</td> </tr>
+      <tr> <td>09:00</td>  <td>Managing data with SQL</td> </tr>
       <tr> <td>10:30</td>  <td>Coffee</td> </tr>
       <tr> <td>12:00</td>  <td>Lunch break</td> </tr>
-      <tr> <td>13:00</td>  <td>Managing data with SQL</td> </tr>
+      <tr> <td>13:00</td>  <td>Version control with Git</td> </tr>
       <tr> <td>14:30</td>  <td>Coffee</td> </tr>
       <tr> <td>16:00</td>  <td>Wrap-up</td> </tr>
     </table>
@@ -234,8 +235,9 @@ and the administrator will contact you if we need any extra information.</h4>
   e.g., '2015-06-10-esu'.
 -->
 {% if page.etherpad %}
-<p id="etherpad">
-  <strong>Etherpad:</strong> <a href="{{page.etherpad}}">{{page.etherpad}}</a>.
+<h3 id="etherpad"><br />Etherpad</h3>
+<hr>
+  <strong>Etherpad link:</strong> <a href="{{page.etherpad}}">{{page.etherpad}}</a>.
   <br/>
   We will use this Etherpad for chatting, taking notes, and sharing URLs and bits of code.
 </p>
@@ -264,7 +266,7 @@ and the administrator will contact you if we need any extra information.</h4>
 
 <div class="row">
   <div class="col-md-6">
-    <h3 id="syllabus-shell">The Unix Shell</h3>
+    <h4 id="syllabus-shell">The Unix Shell</h4>
     <ul>
       <li>Files and directories</li>
       <li>History and tab completion</li>
@@ -276,7 +278,7 @@ and the administrator will contact you if we need any extra information.</h4>
     </ul>
   </div>
   <div class="col-md-6">
-    <h3 id="syllabus-r">Programming in R</h3>
+    <h4 id="syllabus-r">Programming in R</h4>
     <ul>
       <li>Working with vectors and data frames</li>
       <li>Reading and plotting data</li>
@@ -318,7 +320,7 @@ and the administrator will contact you if we need any extra information.</h4>
 
 <div class="row">
   <div class="col-md-6">
-    <h3 id="syllabus-sql">Managing Data with SQL</h3>
+    <h4 id="syllabus-sql">Managing Data with SQL</h4>
     <ul>
       <li>Reading and sorting data</li>
       <li>Filtering with <code>where</code></li>
@@ -332,7 +334,7 @@ and the administrator will contact you if we need any extra information.</h4>
     </ul>
   </div>
   <div class="col-md-6">
-    <h3 id="syllabus-git">Version Control with Git</h3>
+    <h4 id="syllabus-git">Version Control with Git</h4>
     <ul>
       <li>Creating a repository</li>
       <li>Recording changes to files: <code>add</code>, <code>commit</code>, ...</li>
@@ -375,7 +377,7 @@ and the administrator will contact you if we need any extra information.</h4>
 </p>
 
 <div id="shell"> <!-- Start of 'shell' section. -->
-  <h3>The Bash Shell</h3>
+  <h4><br />The Bash Shell</h4>
 
   <p>
     Bash is a commonly-used shell that gives you the power to do simple
@@ -466,7 +468,7 @@ and the administrator will contact you if we need any extra information.</h4>
 
 <div id="git"> <!-- Start of 'Git' section. GitHub browser compatability
            is given at https://help.github.com/articles/supported-browsers/-->
-  <h3>Git</h3>
+  <h4><br />Git</h4>
   <p>
     Git is a version control system that lets you track who made changes
     to what when and has options for easily updating a shared or public
@@ -521,7 +523,7 @@ and the administrator will contact you if we need any extra information.</h4>
 </div> <!-- End of 'Git' section. -->
 
 <div id="editor"> <!-- Start of 'editor' section. -->
-  <h3>Text Editor</h3>
+  <h4><br />Text Editor</h4>
 
   <p>
     When you're writing code, it's nice to have a text editor that is
@@ -583,6 +585,7 @@ and the administrator will contact you if we need any extra information.</h4>
   </div>
 </div> <!-- End of 'editor' section. -->
 
+<!--
 <div id="python"> <!-- Start of 'Python' section. Remove the third paragraph if
            the workshop will teach Python using something other than
            the IPython notebook.
@@ -670,6 +673,7 @@ and the administrator will contact you if we need any extra information.</h4>
   </p>
 -->
 </div> <!-- End of 'Python' section. -->
+-->
 
 <div id="r"> <!-- Start of 'R' section. -->
   <h3>R</h3>
